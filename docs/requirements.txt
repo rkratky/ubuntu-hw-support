@@ -30,3 +30,6 @@ sphinx-sitemap
 # Vale dependencies
 rst2html
 vale
+
+# Extensions needed by this docs set
+sphinx-prompt
