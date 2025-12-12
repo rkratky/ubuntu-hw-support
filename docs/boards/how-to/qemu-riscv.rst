@@ -1,3 +1,5 @@
+.. _install-ubuntu-on-qemu-risc-v:
+
 Install Ubuntu on QEMU (RISC-V)
 ===============================
 

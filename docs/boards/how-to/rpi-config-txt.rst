@@ -1,4 +1,5 @@
-========================================
+.. _edit-the-raspberry-pi-boot-configuration:
+
 Edit the Raspberry Pi boot configuration
 ========================================
 
@@ -28,7 +29,7 @@ The format of the boot configuration is based on the classic MS-DOS
 
 
 Main configuration
-==================
+------------------
 
 The main boot configuration, which applies to all models of Pi, lives in a file
 called :file:`config.txt` placed on the boot partition of your boot media (the
@@ -128,7 +129,7 @@ inadvertently wind up only applying to the last filter (for the Compute Module
 4, in this case).
 
 Conditional sections
---------------------
+~~~~~~~~~~~~~~~~~~~~
 
 There are several other conditional section types that can be used. Refer to
 the Raspberry Pi documentation of the `config.txt format`_ for the definitive
@@ -163,7 +164,7 @@ list, but a brief set of examples follows:
 
 
 EEPROM configuration
-====================
+--------------------
 
 On Raspberry Pi models 4 and later (including the Compute Module 4, the 400,
 and the Pi 5), there is an additional boot configuration file stored in the
@@ -206,7 +207,7 @@ above, but the properties are different.
 
 
 Boot order
-----------
+~~~~~~~~~~
 
 By far the most important property for most people, will be `BOOT_ORDER`_. This
 dictates which boot sources the Pi will attempt to read, and in what order. The

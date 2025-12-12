@@ -1,10 +1,11 @@
-=========================================
+.. _install-ubuntu-on-the-starfive-visionfive:
+
 Install Ubuntu on the StarFive VisionFive
 =========================================
 
 
 Using the pre-installed server image
-====================================
+------------------------------------
 
 This board is no longer supported beyond 22.04 (Jammy Jellyfish).
 
@@ -38,7 +39,7 @@ This board is no longer supported beyond 22.04 (Jammy Jellyfish).
 
 
 Wireless LAN
-============
+------------
 
 To use the wireless LAN you have to configure :term:`netplan`. Find below a
 simple example of a :term:`Netplan` configuration file that must be stored in
@@ -66,7 +67,7 @@ Either reboot or execute the following commands to apply the configuration:
 
 
 Bluetooth
-=========
+---------
 
 The firmware required to use Bluetooth is only available in a PPA:
 
@@ -84,14 +85,14 @@ The firmware required to use Bluetooth is only available in a PPA:
 
 
 Cloud-init seed
-===============
+---------------
 
 Sample files for a cloud-init seed are present on the FAT partition labeled
 "CIDATA". See :ref:`configure-your-board-for-headless-use` for more information.
 
 
 UART console
-============
+------------
 
 The :term:`UART` console is accessible via the :term:`GPIO` header. Assuming
 the typical coloring of USB to :term:`TTL` serial adapters the following

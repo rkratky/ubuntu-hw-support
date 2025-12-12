@@ -8,7 +8,7 @@ board.
 
 
 Hardware
-========
+--------
 
 On some boards (e.g. the HiFive Unmatched), the UART console is exposed via a
 USB socket, typically a micro-USB socket, and in these cases it is common that
@@ -102,7 +102,7 @@ adapter.
 
 
 Software
-========
+--------
 
 The Ubuntu archive contains several serial clients suitable for communicating
 with a UART console. The following is an example of installing the popular
@@ -135,7 +135,7 @@ To exit screen, type :kbd:`Ctrl+A K` then answer ``y`` to the prompt.
 
 
 Troubleshooting
-===============
+---------------
 
 Always troubleshoot your hardware first. Ensure your connections are good, that
 the TX and RX pins are connected the right way round, and that the GND pin is
@@ -146,7 +146,7 @@ The following sections deal with specific problems common to UART usage.
 
 
 Permission denied
------------------
+~~~~~~~~~~~~~~~~~
 
 Typically, USB UART adapters will be accessible to any regular logged in user.
 However, some serial interfaces (particularly built-in ones) do not match the
@@ -168,7 +168,7 @@ group, but you will need to logout and login again for this to take effect:
 
 
 Flow control
-------------
+~~~~~~~~~~~~
 
 Some UARTs have additional pins for `flow control`_ (sometimes labeled
 :abbr:`RTS (Request To Send)` and :abbr:`CTS (Clear To Send)`). However, the
@@ -196,7 +196,7 @@ picocom
 
 
 Full screen applications
-------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~
 
 Some console applications take up the full screen, e.g. :manpage:`top(1)` or
 :manpage:`vim(1)`. However, a serial terminal has no direct means of knowing

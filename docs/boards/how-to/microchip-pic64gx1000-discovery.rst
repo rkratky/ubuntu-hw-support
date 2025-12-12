@@ -1,4 +1,5 @@
-=========================================================
+.. _install-ubuntu-on-the-microchip-pic64gx1000-curiosity-kit:
+
 Install Ubuntu on the Microchip PIC64GX1000 Curiosity Kit
 =========================================================
 
@@ -12,7 +13,7 @@ instructions can be found in the README of the linked repository.
 
 
 Using the pre-installed server image
-====================================
+------------------------------------
 
 #. Download one of the supported images:
 
