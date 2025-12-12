@@ -1,4 +1,5 @@
-==========================================
+.. _install-ubuntu-on-the-sipeed-licheerv-dock:
+
 Install Ubuntu on the Sipeed LicheeRV Dock
 ==========================================
 
@@ -7,7 +8,7 @@ only supply an image for the LicheeRV with Dock.
 
 
 Using the pre-installed server image
-====================================
+------------------------------------
 
 #. Download one of the supported images:
 
@@ -36,7 +37,7 @@ Using the pre-installed server image
    asked to choose a new password
 
 Create a swap file
-==================
+------------------
 
 The available RAM of the LicheeRV is quite small. It is advisable to create a
 swap file.
@@ -55,10 +56,10 @@ Add the following line to /etc/fstab to make the swap memory available at boot:
     /swapfile swap swap defaults 0 0
 
 Wi-Fi configuration
-===================
+-------------------
 
 Install drivers
----------------
+~~~~~~~~~~~~~~~
 
 This step is only required for kernel versions earlier than 6.7. It is *not*
 required for Ubuntu 24.04.
@@ -87,7 +88,7 @@ required for Ubuntu 24.04.
    least an hour.
 
 Configure Netplan
------------------
+~~~~~~~~~~~~~~~~~
 
 #. Configure :term:`Netplan` to connect to your local network. Below is an
    example configuration:
@@ -128,14 +129,14 @@ Configure Netplan
 
 
 Cloud-init seed
-===============
+---------------
 
 Sample files for a cloud-init seed are present on the FAT partition labeled
 "CIDATA". See :ref:`configure-your-board-for-headless-use` for more information.
 
 
 Limitations
-===========
+-----------
 
 * Microphone does not work
 
@@ -146,8 +147,8 @@ Limitations
   * sunxi-mmc
 
   They must either be built into the kernel or must be included in the initial
-  RAM disk via /etc/initramfs-tools/modules or via a file in
-  /usr/share/initramfs-tools/modules.d/.
+  RAM disk via ``/etc/initramfs-tools/modules`` or via a file in
+  ``/usr/share/initramfs-tools/modules.d/``.
 
 
 .. _LicheeRV board: https://wiki.sipeed.com/hardware/en/lichee/RV/Dock.html

@@ -8,7 +8,7 @@ camera stack.
 
 
 Supported camera modules
-========================
+------------------------
 
 We support all the official Raspberry Pi camera modules listed on the
 `Raspberry Pi camera hardware spec`_.
@@ -36,7 +36,7 @@ sensors:
 
 
 Connecting a camera module
-==========================
+--------------------------
 
 You can follow the Raspberry Pi's official documentation to `connect a
 supported camera module`_ to your Raspberry Pi.
@@ -48,7 +48,7 @@ supported camera module`_ to your Raspberry Pi.
 
 
 libcamera-apps
-==============
+--------------
 
 Right after installing Ubuntu on your Raspberry Pi and connecting a camera
 module to it, you can use the various applications provided by the
@@ -57,7 +57,7 @@ applications here: ``cam`` and ``qcam``.
 
 
 cam
----
+~~~
 
 .. note::
     We recommend setting the ``LIBCAMERA_LOG_LEVELS`` to 4 using
@@ -89,7 +89,7 @@ You can also capture frames using ``cam`` in the PPM format.
 
 
 qcam
-----
+~~~~
 
 qcam is a GUI application provided by libcamera that can be used to test the
 camera. You can use it by just typing ``qcam`` in the terminal.
@@ -121,7 +121,7 @@ from the camera.
 - The ``Save Raw`` button can be used to capture a RAW image.
 
 rpicam-apps
-===========
+-----------
 
 .. warning::
 
@@ -144,7 +144,7 @@ documentation`_.
 
 
 picamera2
-=========
+---------
 
 You can also use ``picamera2`` to control the camera modules using Python.
 While ``picamera2`` is not in the Ubuntu archive yet, you can install it from a
@@ -173,7 +173,7 @@ follow it to learn how to use ``picamera2`` on Ubuntu.
 
 
 Workaround for the IMX500 (AI Camera)
-=====================================
+-------------------------------------
 
 .. warning::
 

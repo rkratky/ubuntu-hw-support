@@ -1,4 +1,5 @@
-===========================================
+.. _install-ubuntu-on-the-starfive-visionfive-2:
+
 Install Ubuntu on the StarFive VisionFive 2
 ===========================================
 
@@ -6,7 +7,7 @@ The `StarFive VisionFive 2`_ is a RISC-V based :term:`SBC`.
 
 
 Using the pre-installed server image
-====================================
+------------------------------------
 
 #. Download one of the supported images:
 
@@ -51,7 +52,7 @@ Using the pre-installed server image
 
 
 Using the live server image
-===========================
+---------------------------
 
 The live installer image is used to install Ubuntu to an :term:`eMMC`, USB, or
 :term:`NVMe` drive. To boot the live image, U-Boot must be installed on the SPI
@@ -70,7 +71,7 @@ flash.
 
 
 Install U-Boot to the SPI flash
--------------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 #. Flash the pre-installed server image to a microSD card (see
    :ref:`flash-images-to-a-microsd-card`)
@@ -115,7 +116,7 @@ Install U-Boot to the SPI flash
 
 
 Boot the live server image
---------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 #. Download one of the supported images:
 
@@ -167,7 +168,7 @@ Boot the live server image
 
 
 Boot source selection
-=====================
+---------------------
 
 The StarFive VisionFive 2 board can boot firmware from SPI flash, microSD card,
 eMMC, or UART. The boot source is selected via DIP switches.
@@ -196,14 +197,14 @@ Alternatively, to boot from SPI flash, set the DIP switches like so:
 
 
 Cloud-init seed
-===============
+---------------
 
 Sample files for a cloud-init seed are present on the FAT partition labeled
 "CIDATA". See :ref:`configure-your-board-for-headless-use` for more information.
 
 
 UART console
-============
+------------
 
 The :term:`UART` console is accessible via the :term:`GPIO` header. Assuming
 the typical coloring of USB to :term:`TTL` serial adapters the following
@@ -231,7 +232,7 @@ Connect with the following settings (see :ref:`connect-to-a-uart-console`):
 
 
 Limitations
-===========
+-----------
 
 * The on-board GPU is not supported
 

@@ -15,7 +15,7 @@ device node representing our microSD card.
 
 
 Procedure
-=========
+---------
 
 #. Start with your target microSD card disconnected from your machine
 
@@ -105,7 +105,7 @@ Procedure
 
 
 Alternate device names
-======================
+----------------------
 
 In some cases, depending on the microSD interface in use, you may see output
 like the following from :command:`inotifywait`:
@@ -130,7 +130,7 @@ connected by something other than USB.
 
 
 Avoiding decompression
-======================
+----------------------
 
 If you have limited disk space and do not wish to unpack the OS image, you can
 decompress the image on the fly and pipe the result to :command:`dd`. For this,

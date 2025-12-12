@@ -1,4 +1,5 @@
-============================================
+.. _install-ubuntu-on-the-deepcomputing-fml13v01:
+
 Install Ubuntu on the DeepComputing FML13V01
 ============================================
 
@@ -14,7 +15,7 @@ FrameWork 13" laptop.
    GPU nor PCIe.
 
 Using the pre-installed server image
-====================================
+------------------------------------
 
 #. Download one of the supported images:
 
@@ -59,7 +60,7 @@ Using the pre-installed server image
 
 
 Using the live server image
-===========================
+---------------------------
 
 The live installer image is used to install Ubuntu to an eMMC, USB, or NVMe
 drive. To boot the live image, U-Boot must be installed on the SPI flash.
@@ -72,7 +73,7 @@ drive. To boot the live image, U-Boot must be installed on the SPI flash.
 
 
 Install U-Boot to the SPI flash
--------------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 #. Download one of the supported images:
 
@@ -121,7 +122,7 @@ Install U-Boot to the SPI flash
 
 
 Boot the live server image
---------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 #. Download one of the supported images:
 
@@ -171,7 +172,7 @@ Boot the live server image
 
 
 Boot source selection
-=====================
+---------------------
 
 The DeepComputing FML13V01 board can boot firmware from SPI flash, microSD card,
 eMMC, or UART. The boot source is selected via DIP switches.
@@ -200,14 +201,14 @@ Alternatively, to boot from SPI flash, set the DIP switches like this:
 
 
 Cloud-init seed
-===============
+---------------
 
 Sample files for a cloud-init seed are present on the FAT partition labeled
 "CIDATA". See :ref:`configure-your-board-for-headless-use` for more information.
 
 
 UART console
-============
+------------
 
 The :term:`UART` is available via the right lower USB-C connector. You can
 either use a DeepComputing Debug Expansion Card or a breakout board.
@@ -245,7 +246,7 @@ Connect with the following settings (see :ref:`connect-to-a-uart-console`):
 
 
 Limitations
-===========
+-----------
 
 * The on-board GPU is not supported
 

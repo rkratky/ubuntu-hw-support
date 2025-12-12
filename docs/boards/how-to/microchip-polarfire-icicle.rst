@@ -1,10 +1,11 @@
-========================================================
+.. _install-ubuntu-on-the-microchip-polarfire-soc-icicle-kit:
+
 Install Ubuntu on the Microchip Polarfire SoC Icicle Kit
 ========================================================
 
 
 FPGA Design
-===========
+-----------
 
 Ubuntu's kernel 5.19 requires the `Icicle Kit Reference Design`_ v2022.10 or
 later. The archive :file:`MPFS_ICICLE_BASE_DESIGN_{yyyy}_{mm}.zip` contains a
@@ -20,7 +21,7 @@ Express`_ standalone is bundled with the `Programming and Debug Tools`_.
 
 
 Hart Software Services
-======================
+----------------------
 
 The first stage boot loader of the `PolarFire`_ :term:`SoC` FPGA Icicle Kit is
 called `Hart Software Services`_ (HSS). Ubuntu's kernel 5.19 requires version
@@ -38,7 +39,7 @@ built and programmed independently of the design using the command line or the
 
 
 Using the pre-installed server image
-====================================
+------------------------------------
 
 #. Download one of the supported images:
 
@@ -81,14 +82,14 @@ Using the pre-installed server image
 
 
 Cloud-init seed
-===============
+---------------
 
 Sample files for a cloud-init seed are present on the FAT partition labeled
 "CIDATA". See :ref:`configure-your-board-for-headless-use` for more information.
 
 
 UART console
-============
+------------
 
 The board features a USB to quad :term:`UART` bridge controller (J11), hence
 this is one of the boards that does *not* require a USB-UART adapter. Connect
@@ -107,7 +108,7 @@ Connect with the following settings (see :ref:`connect-to-a-uart-console`):
 
 
 USB
-===
+---
 
 The USB OTG port (J16) can both be used a USB client or a USB host port.
 Jumpers on the board switch between client and host mode (J15) and control the
@@ -116,6 +117,6 @@ mode.
 
 
 Limitations
-===========
+-----------
 
 * As of Linux kernel version 6.2, PCIe is not supported.

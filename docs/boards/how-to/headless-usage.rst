@@ -21,7 +21,7 @@ You will need the following:
 
 
 Cloud-init seeds
-================
+----------------
 
 The cloud-init "seed" provides the configuration that cloud-init will act upon
 during the first boot. The location of the seed is image dependent. On the
@@ -48,7 +48,7 @@ network-config
 
 
 Network configuration
-=====================
+---------------------
 
 The :file:`network-config` file contains the :term:`netplan` compatible
 configuration for networking cards present on the board. The default network
@@ -112,7 +112,7 @@ reliable medium.
 
 
 Customizing the users
-=====================
+---------------------
 
 On the vast majority of pre-installed Ubuntu images, the default username is
 "ubuntu" with a default password of "ubuntu". Obviously this is well known
@@ -260,7 +260,7 @@ Alternatively, you can suppress creation of the default user (by not including
 
 
 SSH authentication
-==================
+------------------
 
 By default, password-based authentication for SSH is disabled because the
 default usernames and passwords are both well known and trivially guessable.
@@ -313,7 +313,7 @@ keys from the GitHub user "fred_flintstone":
 
 
 Finding your board
-==================
+------------------
 
 A common issue with headless :term:`SBCs <SBC>` is how to locate them on the
 network once they have booted. One method is to configure each with a static IP
@@ -364,7 +364,7 @@ have "avahi-daemon" installed on your client machine.
 
 
 Optimizations
-=============
+-------------
 
 If you are booting many boards with the same release or distribution, it may be
 beneficial to configure a local apt cache (see :manpage:`apt-cacher-ng(8)`). If

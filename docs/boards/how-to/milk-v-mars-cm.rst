@@ -1,4 +1,5 @@
-================================================
+.. _install-ubuntu-on-the-milk-v-mars-cm-and-cm-lite:
+
 Install Ubuntu on the Milk-V Mars CM and CM Lite
 ================================================
 
@@ -9,7 +10,7 @@ The `Milk-V Mars CM`_ is a RISC-V based :term:`SBC`.
     The Milk-V Mars CM is not yet supported by official Ubuntu images.
 
 NVMe support
-============
+------------
 
 For attaching an NVMe drive the Waveshare CM4-IO-BASE-A board can be used.
 
@@ -21,7 +22,7 @@ For attaching an NVMe drive the Waveshare CM4-IO-BASE-A board can be used.
     power to the m.2 connector.
 
 Boot source selection
-=====================
+---------------------
 
 The Milk-V Mars CM board can boot firmware from SPI flash or UART.
 The boot source is selected via the nRPIBOOT line. When connected to ground
@@ -36,7 +37,7 @@ boot from UART.
     :alt: Boot select
 
 UART console
-============
+------------
 
 The :term:`UART` is available on the Waveshare CM4-IO-BASE-A board via the
 :term:`GPIO` connector. Assuming the typical coloring of USB to :term:`TTL`
@@ -66,7 +67,7 @@ Connect with the following settings (see :ref:`connect-to-a-uart-console`):
 
 
 Limitations
-===========
+-----------
 
 * The on-board GPU is not supported
 

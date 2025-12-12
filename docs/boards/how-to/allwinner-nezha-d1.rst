@@ -1,4 +1,5 @@
-========================================
+.. _install-ubuntu-on-the-allwinner-nezha-d1:
+
 Install Ubuntu on the Allwinner Nezha D1
 ========================================
 
@@ -6,7 +7,7 @@ The `Nezha D1`_ is a RISC-V based :term:`SBC`.
 
 
 Using the pre-installed server image
-====================================
+------------------------------------
 
 #. Download one of the supported images:
 
@@ -41,14 +42,14 @@ Using the pre-installed server image
 
 
 Cloud-init seed
-===============
+---------------
 
 Sample files for a cloud-init seed are present on the FAT partition labeled
 "CIDATA". See :ref:`configure-your-board-for-headless-use` for more information.
 
 
 UART console
-============
+------------
 
 The :term:`UART` is located on its own three-pin header labeled "DEBUG",
 adjacent to the main :term:`GPIO` header. The GND, RX, and TX pins are all
@@ -76,7 +77,7 @@ Connect with the following settings (see :ref:`connect-to-a-uart-console`):
 
 
 Limitations
-===========
+-----------
 
 * Wifi/Bluetooth is not working: the wifi driver only available in the vendor
   kernel.

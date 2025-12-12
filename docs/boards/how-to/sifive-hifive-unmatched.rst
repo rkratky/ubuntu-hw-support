@@ -1,4 +1,5 @@
-=============================================
+.. _install-ubuntu-on-the-sifive-hifive-unmatched:
+
 Install Ubuntu on the SiFive HiFive Unmatched
 =============================================
 
@@ -6,7 +7,7 @@ The `SiFive HiFive Unmatched`_ is a RISC-V based :term:`SBC`.
 
 
 Using the pre-installed server image
-====================================
+------------------------------------
 
 #. Download one of the supported images:
 
@@ -39,7 +40,7 @@ Using the pre-installed server image
 
 
 Using the live server image
-===========================
+---------------------------
 
 The live installer image is used to install Ubuntu to an :term:`NVMe` drive
 attached to the M.2 slot on the board.
@@ -104,7 +105,7 @@ attached to the M.2 slot on the board.
     You can do this manually using U-Boot's :command:`eficonfig` command.
 
 Installing the Gnome desktop
-----------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 If you have a graphics card installed, you may want to use a graphical desktop.
 The Gnome desktop can be installed with
@@ -117,7 +118,7 @@ The Gnome desktop can be installed with
 
 
 Boot source selection
-=====================
+---------------------
 
 The SiFive HiFive Unmatched board can boot firmware from the built-in flash
 memory, or from the microSD card. The boot source is selected via DIP switches.
@@ -154,14 +155,14 @@ setting of 1011 as illustrated below:
     indicates board version 2.
 
 Cloud-init seed
-===============
+---------------
 
 Sample files for a cloud-init seed are present on the FAT partition labeled
 "CIDATA". See :ref:`configure-your-board-for-headless-use` for more information.
 
 
 UART console
-============
+------------
 
 The board makes both :term:`JTAG` and :term:`UART` available over the micro USB
 connector located adjacent to the microSD card slot, hence this board does
