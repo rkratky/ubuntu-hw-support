@@ -1,5 +1,7 @@
 .. SPDX-License-Identifier: CC-BY-SA-4.0
 
+.. _your-first-kernel-package:
+
 Your first kernel package
 =========================
 

@@ -1,4 +1,5 @@
-=====================================
+.. _configure-your-board-for-headless-use:
+
 Configure your board for headless use
 =====================================
 

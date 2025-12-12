@@ -1,3 +1,5 @@
+.. _ubuntu-boards-documentation:
+
 Ubuntu boards documentation
 ===========================
 
@@ -22,19 +24,19 @@ supported boards and image variants.
     :gutter: 3
 
     .. grid-item-card:: **Tutorials**
-       :link: tutorials/index
-       :link-type: doc
+       :link: boards-tutorials
+       :link-type: ref
 
        First time set up guides for popular boards
 
     .. grid-item-card:: **How-to guides**
-       :link: how-to/index
-       :link-type: doc
+       :link: boards-how-to-guides
+       :link-type: ref
 
        Guides on debugging common first boot problems on a variety of hardware
 
     .. grid-item-card:: **Explanations**
-       :link: explanations/index
-       :link-type: doc
+       :link: boards-explanations
+       :link-type: ref
 
        Discussion of the pros and cons of the various image types

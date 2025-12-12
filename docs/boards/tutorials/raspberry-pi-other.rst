@@ -1,4 +1,5 @@
-=====================================
+.. _install-ubuntu-on-raspberry-pi-via-pc:
+
 Install Ubuntu on Raspberry Pi via PC
 =====================================
 
@@ -8,8 +9,7 @@ the following:
 
 * A computer running Ubuntu, Windows, or macOS
 
-* A Raspberry Pi (any model :doc:`supported by Ubuntu
-  </how-to/raspberry-pi>`)
+* A Raspberry Pi (any model :ref:`supported by Ubuntu <install-ubuntu-on-the-raspberry-pi>`)
 
 * Storage media; one of:
 
@@ -31,7 +31,7 @@ the following:
 
 
 Flashing the boot media
-=======================
+-----------------------
 
 .. figure:: /images/rpi-other-software.png
     :alt: The rpi-imager application, displaying a selection of Pi 5, and
@@ -92,7 +92,7 @@ Flashing the boot media
 
 
 Booting the Pi
-==============
+--------------
 
 #. Ensure your Pi is not connected to a power source
 

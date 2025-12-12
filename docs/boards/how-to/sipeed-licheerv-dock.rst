@@ -13,14 +13,14 @@ Using the pre-installed server image
 
    .. ubuntu-images::
        :releases: noble-
-       :suffixes: +licheerv
+       :suffix: +licheerv
 
 #. Flash the pre-installed server image to a microSD card (see
-   :doc:`/how-to/flash-images`)
+   :ref:`flash-images-to-a-microsd-card`)
 
 #. Insert the microSD card into the board
 
-#. Connect to the serial :term:`UART` console (see :doc:`/how-to/uart-console`)
+#. Connect to the serial :term:`UART` console (see :ref:`connect-to-a-uart-console`)
 
 #. Power on the board
 
@@ -131,7 +131,7 @@ Cloud-init seed
 ===============
 
 Sample files for a cloud-init seed are present on the FAT partition labeled
-"CIDATA". See :doc:`/how-to/headless-usage` for more information.
+"CIDATA". See :ref:`configure-your-board-for-headless-use` for more information.
 
 
 Limitations

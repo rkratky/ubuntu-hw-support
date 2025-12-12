@@ -1,4 +1,5 @@
-=======================================
+.. _install-ubuntu-on-raspberry-pi-directly:
+
 Install Ubuntu on Raspberry Pi directly
 =======================================
 
@@ -30,7 +31,7 @@ without the need for an additional machine. You will need the following:
 
 
 Hardware setup
-==============
+--------------
 
 #. Connect your blank storage media
 
@@ -51,7 +52,7 @@ Hardware setup
 
 
 Software installation
-=====================
+---------------------
 
 .. figure:: /images/rpi-solo-software.png
     :alt: The Raspberry Pi boot-loader screen, displaying the prompt to

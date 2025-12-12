@@ -1,5 +1,7 @@
 .. SPDX-License-Identifier: CC-BY-SA-4.0
 
+.. _your-first-ubuntu-image:
+
 Your first Ubuntu image
 =======================
 

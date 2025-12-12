@@ -18,14 +18,14 @@ Using the pre-installed server image
 
    .. ubuntu-images::
        :releases: noble-
-       :suffixes: +pic64gx
+       :suffix: +pic64gx
 
 #. Flash the pre-installed server image to a microSD card (see
-   :doc:`/how-to/flash-images`)
+   :ref:`flash-images-to-a-microsd-card`)
 
 #. Insert the microSD card into the board
 
-#. Connect to the serial :term:`UART` console (see :doc:`/how-to/uart-console`)
+#. Connect to the serial :term:`UART` console (see :ref:`connect-to-a-uart-console`)
 
 #. Power on the board
 

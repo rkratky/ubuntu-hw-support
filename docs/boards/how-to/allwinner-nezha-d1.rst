@@ -12,15 +12,15 @@ Using the pre-installed server image
 
    .. ubuntu-images::
        :releases: jammy-
-       :suffixes: +nezha
+       :suffix: +nezha
 
 #. Flash the pre-installed server image to an SD card (see
-   :doc:`/how-to/flash-images`)
+   :ref:`flash-images-to-a-microsd-card`)
 
 #. Insert the SD card into the board
 
 #. Optionally connect a USB UART adapter to the :term:`UART` on the
-   :term:`GPIO` header (see `UART console`_ and :doc:`/how-to/uart-console`)
+   :term:`GPIO` header (see `UART console`_ and :ref:`connect-to-a-uart-console`)
 
 #. Power on the board
 
@@ -44,7 +44,7 @@ Cloud-init seed
 ===============
 
 Sample files for a cloud-init seed are present on the FAT partition labeled
-"CIDATA". See :doc:`/how-to/headless-usage` for more information.
+"CIDATA". See :ref:`configure-your-board-for-headless-use` for more information.
 
 
 UART console
@@ -66,7 +66,7 @@ TX    RX,  white
 
 Do not connect the red 3.3 V wire.
 
-Connect with the following settings (see :doc:`/how-to/uart-console`):
+Connect with the following settings (see :ref:`connect-to-a-uart-console`):
 
 * 115200 baud
 * 8 data bits

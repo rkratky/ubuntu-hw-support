@@ -1,6 +1,8 @@
 .. SPDX-License-Identifier: CC-BY-SA-4.0
 
-RISC-V Image Cookbook
+.. _risc-v-image-cookbook:
+
+RISC-V image cookbook
 =====================
 
 The RISC-V Image Cookbook is meant to help users to spin Ubuntu based images
@@ -14,7 +16,7 @@ It will guide you through these steps of your project:
 * Build the image
 * Test the image
 
-Please, start reading at the :doc:`Overview <overview/index>` chapter.
+Please, start reading at the :ref:`risc-v-overview` chapter.
 
 .. note::
 
@@ -23,11 +25,11 @@ Please, start reading at the :doc:`Overview <overview/index>` chapter.
 Contributing
 ------------
 
-The RISC-V Image Cookbook is community effort and welcomes community projects,
+The RISC-V image cookbook is community effort and welcomes community projects,
 contributions, suggestions, fixes and constructive feedback.
 
 To contribute create an issue or merge request on
-https://github.com/canonical/risc-v-cookbook.
+`<https://github.com/canonical/ubuntu-hw-support>`__.
 
 -----
 
@@ -43,40 +45,38 @@ https://github.com/canonical/risc-v-cookbook.
    reference/index
    explanation/index
 
-   contributing
-
 
 .. grid:: 1 1 1 1
 
-   .. grid-item-card:: :doc:`Overview <overview/index>`
-      :link: overview/index
-      :link-type: doc
+   .. grid-item-card:: :ref:`risc-v-overview`
+      :link: risc-v-overview
+      :link-type: ref
 
       **Start here** to get an overview of an image creation project
 .. grid:: 1 1 2 2
 
-   .. grid-item-card:: :doc:`Tutorial <tutorial/index>`
-      :link: tutorial/index
-      :link-type: doc
+   .. grid-item-card:: :ref:`risc-v-tutorials`
+      :link: risc-v-tutorials
+      :link-type: ref
 
       **First steps** - hands-on introductions
 
-   .. grid-item-card:: :doc:`How-to guides <howto/index>`
-      :link: howto/index
-      :link-type: doc
+   .. grid-item-card:: :ref:`risc-v-how-to-guides`
+      :link: risc-v-how-to-guides
+      :link-type: ref
 
       **Step-by-step guides** covering key operations and common tasks
 
 .. grid:: 1 1 2 2
 
-   .. grid-item-card:: :doc:`Reference <reference/index>`
-      :link: reference/index
-      :link-type: doc
+   .. grid-item-card:: :ref:`risc-v-reference`
+      :link: risc-v-reference
+      :link-type: ref
 
       **Technical information** - specifications, APIs, architecture
 
-   .. grid-item-card:: :doc:`Explanation <explanation/index>`
-      :link: explanation/index
-      :link-type: doc
+   .. grid-item-card:: :ref:`risc-v-explanation`
+      :link: risc-v-explanation
+      :link-type: ref
 
       **Discussion and clarification** of key topics

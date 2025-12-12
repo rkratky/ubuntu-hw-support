@@ -12,17 +12,17 @@ Using the pre-installed server image
 
    .. ubuntu-images::
        :releases: noble-
-       :suffixes: +unmatched
+       :suffix: +unmatched
 
 #. Flash the pre-installed server image to a microSD card (see
-   :doc:`/how-to/flash-images`)
+   :ref:`flash-images-to-a-microsd-card`)
 
 #. Insert the microSD card into the board
 
 #. Set the boot source to the microSD card (see `Boot source selection`_)
 
 #. Connect to the :term:`UART` console (see `UART console`_ and
-   :doc:`/how-to/uart-console`)
+   :ref:`connect-to-a-uart-console`)
 
 #. Power on the board
 
@@ -52,14 +52,14 @@ attached to the M.2 slot on the board.
        :archs: riscv64
 
 #. Flash the pre-installed server image to a microSD card (see
-   :doc:`/how-to/flash-images`)
+   :ref:`flash-images-to-a-microsd-card`)
 
 #. Insert the microSD card into the board
 
 #. Set the boot source to the microSD card (see `Boot source selection`_)
 
 #. Connect to the :term:`UART` console (see `UART console`_ and
-   :doc:`/how-to/uart-console`)
+   :ref:`connect-to-a-uart-console`)
 
 #. Power on the board; if there is no operating system already on the NVMe
    drive, skip to step 9
@@ -157,7 +157,7 @@ Cloud-init seed
 ===============
 
 Sample files for a cloud-init seed are present on the FAT partition labeled
-"CIDATA". See :doc:`/how-to/headless-usage` for more information.
+"CIDATA". See :ref:`configure-your-board-for-headless-use` for more information.
 
 
 UART console
@@ -170,7 +170,7 @@ connector located adjacent to the microSD card slot, hence this board does
 When connected, it appears as two separate devices in Linux. The first UART
 (typically :file:`/dev/ttyUSB0`) is JTAG, and the second (typically
 :file:`/dev/ttyUSB1`) is the UART console. Connect with the following settings
-(see :doc:`/how-to/uart-console`):
+(see :ref:`connect-to-a-uart-console`):
 
 * 115200 baud
 * 8 data bits

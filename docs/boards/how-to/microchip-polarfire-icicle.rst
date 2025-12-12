@@ -44,10 +44,10 @@ Using the pre-installed server image
 
    .. ubuntu-images::
        :releases: jammy-
-       :suffixes: +icicle
+       :suffix: +icicle
 
 #. Flash the pre-installed server image to a microSD card or the Icicle Kit on
-   board eMMC (see :doc:`/how-to/flash-images`). The board uses package
+   board eMMC (see :ref:`flash-images-to-a-microsd-card`). The board uses package
    ``u-boot-microchip`` as second stage boot loader. It is installed in
    the partition with label "loader" on the above pre-installed server disk
    image. Ubuntu's U-Boot has been set up to use all U54 cores for Linux. If
@@ -58,7 +58,7 @@ Using the pre-installed server image
 #. Insert the microSD card into the board
 
 #. Connect to the :term:`UART` console (see `UART console`_ and
-   :doc:`/how-to/uart-console`)
+   :ref:`connect-to-a-uart-console`)
 
 #. Power on the board
 
@@ -84,7 +84,7 @@ Cloud-init seed
 ===============
 
 Sample files for a cloud-init seed are present on the FAT partition labeled
-"CIDATA". See :doc:`/how-to/headless-usage` for more information.
+"CIDATA". See :ref:`configure-your-board-for-headless-use` for more information.
 
 
 UART console
@@ -97,7 +97,7 @@ with a regular micro-USB cable.
 When connected, it appears as several devices in Linux. The first UART
 (typically :file:`/dev/ttyUSB0`) has the HSS output, while the second
 (typically :file:`/dev/ttyUSB1`) is used for the U-Boot and Linux console.
-Connect with the following settings (see :doc:`/how-to/uart-console`):
+Connect with the following settings (see :ref:`connect-to-a-uart-console`):
 
 * 115200 baud
 * 8 data bits

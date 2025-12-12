@@ -149,7 +149,7 @@ Cloud-init seed
 ~~~~~~~~~~~~~~~
 
 Sample files for a cloud-init seed are present on the FAT partition labeled
-"CIDATA". See :doc:`/how-to/headless-usage` for more information.
+"CIDATA". See :ref:`configure-your-board-for-headless-use` for more information.
 
 
 Using the live server image

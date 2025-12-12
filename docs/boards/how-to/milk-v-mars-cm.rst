@@ -56,7 +56,7 @@ Do not connect the red 3.3 V wire.
     :width: 20em
     :alt: UART
 
-Connect with the following settings (see :doc:`/how-to/uart-console`):
+Connect with the following settings (see :ref:`connect-to-a-uart-console`):
 
 * 115200 baud
 * 8 data bits

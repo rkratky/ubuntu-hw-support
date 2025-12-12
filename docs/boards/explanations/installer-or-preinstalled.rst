@@ -1,4 +1,5 @@
-=========================================
+.. _server-installer-or-pre-installed-images:
+
 Server installer or pre-installed images?
 =========================================
 
@@ -18,7 +19,7 @@ Pi).
 
 
 Hardware requirements
-=====================
+---------------------
 
 The installer images necessarily require that you have *two* machines, one to
 generate the installation media (commonly a PC), and the target SBC to run the
@@ -27,16 +28,11 @@ follows that you need two drives: the installer drive (commonly a USB stick or
 SD card), and the final target media (often an :term:`SSD` or :term:`NVMe`
 drive).
 
-The pre-installed images *may* require two machines. Certain boards, notably
-the later models of the Raspberry Pi, are capable of :doc:`flashing
-pre-installed images to local media </tutorials/raspberry-pi-solo>` from their
-bootloader. Regardless, the pre-installed images typically only require one
-piece of target media (commonly an SD card), and thus have simpler initial
-requirements.
+The pre-installed images *may* require two machines. Certain boards, notably the later models of the Raspberry Pi, are capable of :ref:`flashing pre-installed images to local media <install-ubuntu-on-raspberry-pi-directly>` from their bootloader. Regardless, the pre-installed images typically only require one piece of target media (commonly an SD card), and thus have simpler initial requirements.
 
 
 Storage flexibility
-===================
+-------------------
 
 By their nature, the pre-installed images dictate the partition layout that the
 eventual system will have. Beyond selecting the type and size of your target
@@ -55,7 +51,7 @@ their storage including partition size, type, and file-system format selection.
 
 
 Automated installation
-======================
+----------------------
 
 The installer images provide an auto-install facility that can be used to
 automate the configuration of the new server, including user creation, package

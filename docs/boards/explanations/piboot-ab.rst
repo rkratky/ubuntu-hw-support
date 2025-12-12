@@ -1,4 +1,5 @@
-===================================
+.. _a-b-boot-on-ubuntu-for-raspberry-pi:
+
 A/B boot on Ubuntu for Raspberry Pi
 ===================================
 
@@ -15,7 +16,7 @@ overlays, the Linux kernel, and the initramfs are covered.
 
 
 File layout
-===========
+-----------
 
 The layout of files on the boot partition is (as of 25.10) as follows:
 
@@ -84,7 +85,7 @@ the boot partition:
 
 
 Typical operation
-=================
+-----------------
 
 In each of the folders on the boot partition, a :file:`state` file will be
 present which records the state of the boot assets in that folder. This file
@@ -115,7 +116,7 @@ system, but will never be used to boot under normal conditions.
 
 
 Testing new boot assets
-=======================
+-----------------------
 
 Installation of new boot assets is handled, as ever, by the
 ``flash-kernel`` command. This is automatically called in response to
@@ -170,7 +171,7 @@ service will perform the following:
 
 
 Boot asset failure
-==================
+------------------
 
 Failure may occur in several places, and as noted previously not all assets are
 covered. This section will not consider bootloader asset failure as, at least
@@ -210,7 +211,7 @@ to :file:`new/state`.
 
 
 Boot asset validation
-=====================
+---------------------
 
 The ``piboot-try-validate`` service relies on the
 :file:`/etc/flash-kernel/piboot-validate` script to determine whether boot
@@ -274,7 +275,7 @@ validation script to suit your needs.
 
 
 Advanced operation
-==================
+------------------
 
 If required, the double-boot can be avoided by using the
 ``piboot-try`` command. This has a number of options that can be used
@@ -283,7 +284,7 @@ mode immediately, to restore prior state, and reset failed assets.
 
 
 Avoiding the double-boot
-------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~
 
 The ``--test`` option returns zero (indicating success) if new, untested boot
 assets are present, and non-zero otherwise. In other words, this can be used be
@@ -308,7 +309,7 @@ in a script to ensure the reboot will avoid the double boot like so:
 
 
 Testing new boot configuration
-------------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 The boot configuration is largely controlled through two files:
 :file:`config.txt` in the root of the boot partition, and :file:`cmdline.txt`
@@ -343,7 +344,7 @@ Alternately, if you need to test a new configuration in :file:`cmdline.txt`:
 
 
 Restore old assets
-------------------
+~~~~~~~~~~~~~~~~~~
 
 Sometimes bad configuration is not immediately obvious. If the "old" folder
 still exists on the boot partition (if ``flash-kernel`` has not been run

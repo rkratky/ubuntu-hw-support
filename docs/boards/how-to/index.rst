@@ -1,4 +1,5 @@
-=============
+.. _boards-how-to-guides:
+
 How-to guides
 =============
 

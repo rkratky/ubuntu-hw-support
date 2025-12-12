@@ -8,7 +8,7 @@ This guide explains how to create a custom Linux kernel package using the
 kernel tree is needed. The repository should be based on an upstream Linux
 kernel version ``<kernel_version>``.
 
-First, execute the :doc:`/tutorial/create_kernel` tutorial.
+First, execute the :ref:`your-first-kernel-package` tutorial.
 This provides a sample project.
 
 Clone required repositories

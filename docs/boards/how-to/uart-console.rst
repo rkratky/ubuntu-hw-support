@@ -1,4 +1,5 @@
-=========================
+.. _connect-to-a-uart-console:
+
 Connect to a UART console
 =========================
 

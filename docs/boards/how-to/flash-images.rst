@@ -1,4 +1,5 @@
-==============================
+.. _flash-images-to-a-microsd-card:
+
 Flash images to a microSD card
 ==============================
 

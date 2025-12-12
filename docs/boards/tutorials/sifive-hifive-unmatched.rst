@@ -1,4 +1,5 @@
-======================================
+.. _install-ubuntu-on-the-sifive-unmatched:
+
 Install Ubuntu on the SiFive Unmatched
 ======================================
 

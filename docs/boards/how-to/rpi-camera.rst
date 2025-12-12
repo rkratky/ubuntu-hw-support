@@ -1,4 +1,5 @@
-================================
+.. _using-the-camera-on-raspberry-pi:
+
 Using the camera on Raspberry Pi
 ================================
 
@@ -66,9 +67,10 @@ The cam_ utility can be used for basic testing. You can list the connected
 cameras using ``cam -l``.
 
 .. terminal::
-    :input: cam -l
     :user: ubuntu
     :host: ubuntu
+
+    cam -l
 
     Available cameras:
     1: 'imx500' (/base/axi/pcie@120000/rp1/i2c@80000/imx500@1a)
@@ -76,9 +78,10 @@ cameras using ``cam -l``.
 You can also capture frames using ``cam`` in the PPM format.
 
 .. terminal::
-    :input: cam -c 1 --capture --file=frame.ppm
     :user: ubuntu
     :host: ubuntu
+
+    cam -c 1 --capture --file=frame.ppm
 
     Using camera /base/axi/pcie@120000/rp1/i2c@80000/imx500@1a as cam0
     cam0: Capture 1 frames
@@ -209,7 +212,7 @@ it on Ubuntu.
 .. LINKS
 .. _Raspberry Pi: https://www.raspberrypi.com/
 .. _Raspberry Pi camera hardware spec: https://www.raspberrypi.com/documentation/accessories/camera.html#hardware-specification
-.. _connect a supported camera module: https://www.raspberrypi.com/documentation/accessories/camera.html#connect-the-camera
+.. _connect a supported camera module: https://www.raspberrypi.com/documentation/accessories/camera.html
 .. _cam: https://libcamera.org/getting-started.html#basic-testing-with-cam-utility
 .. _AI camera documentation: https://www.raspberrypi.com/documentation/accessories/ai-camera.html
 .. _rpicam-apps documentation: https://www.raspberrypi.com/documentation/computers/camera_software.html#rpicam-apps

@@ -1,5 +1,7 @@
 .. SPDX-License-Identifier: CC-BY-SA-4.0
 
+.. _how-to-contribute:
+
 How to contribute
 =================
 
@@ -65,7 +67,7 @@ If you want to address an issue or a bug in the
 :doc:`index`
 
 - Fork our Github repository
-  `<https://github.com/canonical/risc-v-cookbook>`__
+  `<https://github.com/canonical/ubuntu-hw-support>`__
   and add the changes to your fork,
   properly structuring your commits,
   providing detailed commit messages
@@ -130,7 +132,7 @@ Formatting
 ~~~~~~~~~~
 
 We use `Sphinx <https://www.sphinx-doc.org/en/master/>`_ for generating the
-documentation from **reStructured Text**. Refer to our `reStructuredText style guide <https://canonical-documentation-with-sphinx-and-readthedocscom.readthedocs-hosted.com/style-guide/>`_ for basic guidance.
+documentation from **reStructured Text**. Refer to our `reStructuredText reference <https://canonical-starter-pack.readthedocs-hosted.com/dev/reference/rst-syntax-reference/>`_ for basic guidance.
 
 We tend to use a maximum of 80 characters per line.
 

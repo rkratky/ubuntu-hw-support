@@ -107,7 +107,7 @@ options are:
 This section simply enables the serial :term:`UART` on :term:`GPIO` 14 and 15.
 This is only included on the Ubuntu Server images because headless setups
 (where the serial console is useful for debugging) are relatively common with
-this image. See :doc:`/how-to/uart-console` for further information.
+this image. See :ref:`connect-to-a-uart-console` for further information.
 
 The Ubuntu Desktop images do *not* enable the serial UART by default as we
 assume a keyboard and monitor will be present there.

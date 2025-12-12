@@ -1,4 +1,5 @@
-==================================
+.. _install-ubuntu-on-the-raspberry-pi:
+
 Install Ubuntu on the Raspberry Pi
 ==================================
 
@@ -6,7 +7,7 @@ The `Raspberry Pi`_ is an ARM based :term:`SBC` made in the UK.
 
 
 Supported models
-================
+----------------
 
 The following matrix maps all models of the Raspberry Pi against the releases
 of Ubuntu that support them.
@@ -101,13 +102,13 @@ C
 
 
 Using the pre-installed server image
-====================================
+------------------------------------
 
 #. Download one of the supported images:
 
    .. ubuntu-images::
        :releases: focal-
-       :suffixes: +raspi
+       :suffix: +raspi
        :image-types: preinstalled-server
 
 #. Flash the pre-installed image to your selection of boot media (microSD card,
@@ -137,13 +138,13 @@ Using the pre-installed server image
 
 
 Using the pre-installed desktop image
-=====================================
+-------------------------------------
 
 #. Download one of the supported images:
 
    .. ubuntu-images::
        :releases: focal-
-       :suffixes: +raspi
+       :suffix: +raspi
        :image-types: preinstalled-desktop
 
 #. Flash the pre-installed image to your selection of boot media (microSD card,
@@ -160,18 +161,18 @@ Using the pre-installed desktop image
 
 
 Cloud-init seed
-===============
+---------------
 
 The cloud-init seed for the pre-installed Raspberry Pi images is always located
 on the boot partition (the first partition in the image, formatted as FAT).
 Please note that, prior to the 24.04 LTS (noble) release, only the
 pre-installed server images provided cloud-init.
 
-See :doc:`/how-to/headless-usage` for more information.
+See :ref:`configure-your-board-for-headless-use` for more information.
 
 
 UART console
-============
+------------
 
 The :term:`UART` console is accessible via the :term:`GPIO` header on all
 models *except* the Pi 5. Assuming the typical coloring of USB to :term:`TTL`
@@ -222,7 +223,7 @@ models, append the following line to :file:`config.txt` on the boot partition:
 
     dtparam=uart0_console
 
-Connect with the following settings (see :doc:`/how-to/uart-console`):
+Connect with the following settings (see :ref:`connect-to-a-uart-console`):
 
 * 115200 baud
 * 8 data bits
@@ -232,11 +233,10 @@ Connect with the following settings (see :doc:`/how-to/uart-console`):
 
 
 Limitations
-===========
+-----------
 
 * The libcamera stack is not currently operational on Ubuntu releases before
-  25.04 (:lp-bug:`2038669`). See :doc:`/how-to/rpi-camera` for more
-  information.
+  25.04 (:lp-bug:`2038669`). See :ref:`using-the-camera-on-raspberry-pi` for more information.
 
 
 .. _Raspberry Pi: https://www.raspberrypi.com/

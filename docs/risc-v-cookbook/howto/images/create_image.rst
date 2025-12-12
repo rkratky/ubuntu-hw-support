@@ -1,5 +1,7 @@
 .. SPDX-License-Identifier: CC-BY-SA-4.0
 
+.. _create-customized-image-with-ubuntu-image:
+
 Create customized image with ubuntu-image
 =========================================
 
@@ -9,7 +11,7 @@ For creating an image with ubuntu-image we need
 * a image definition file image-definition.yaml which may be located in the same
   git repository
 
-Please, execute the :doc:`/tutorial/create_image` tutorial.
+Please, execute the :ref:`your-first-ubuntu-image` tutorial.
 This provides a sample project.
 
 Install dependencies
@@ -35,18 +37,18 @@ Create a gadget definition
 
 At a minimum the Gadget definition consists of
 
-* the definition file gadget.yaml
-* a Makefile where the default target
-  * copies gadget.yaml to directory ``meta/``
+* the definition file :file:`gadget.yaml`
+* a :file:`Makefile` where the default target
+  * copies :file:`gadget.yaml` to directory ``meta/``
   * copies all installation files to directory ``install/``
 
 The YAML file format is described in https://yaml.org/spec/.
 
-An overview of the available fields in gadget.yaml is provided in
-:doc:`/reference/gadget_definition/`.
+An overview of the available fields in :file:`gadget.yaml` is provided in
+:ref:`gadget-yaml-fields`.
 
-The gadget definition is provided as a Yaml file meta/gadget.yaml.
-gadget.yaml describes
+The gadget definition is provided as a Yaml file :file:`meta/gadget.yaml`.
+:file:`gadget.yaml` describes
 
 * partitions of the image
 * files installed on partitions other than the root partition
