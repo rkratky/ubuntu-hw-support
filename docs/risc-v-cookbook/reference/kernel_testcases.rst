@@ -63,7 +63,7 @@ Build a snap
     lxd init
     git clone https://git.code.sf.net/p/sispmctl/git sispmctl
     cd sispmctl/
-    snapcraft --use-lxd --verbose
+    snapcraft pack --use-lxd --verbose
     find . -name '*.snap'
 
 QEMU
