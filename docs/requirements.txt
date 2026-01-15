@@ -1,6 +1,9 @@
 # Canonical theme (still needed for Furo theme and custom templates)
 canonical-sphinx>=0.5.1
 
+# Doc builds failed with dependency graph is too complex
+myst-parser==4.0.1
+
 # Extensions previously auto-loaded by canonical-sphinx
 myst-parser
 sphinx-autobuild
