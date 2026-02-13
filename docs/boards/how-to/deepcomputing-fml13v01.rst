@@ -65,19 +65,16 @@ Using the live server image
 The live installer image is used to install Ubuntu to an eMMC, USB, or NVMe
 drive. To boot the live image, U-Boot must be installed on the SPI flash.
 
-.. warning::
-
-    The installer in Ubuntu 24.10 and 25.04 fails to invoke flash-kernel and
-    grub-update. The system is booted with the device-tree from U-Boot and
-    fails with an outdated U-Boot. Please, update U-Boot as described below.
-
 
 Install U-Boot to the SPI flash
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 #. Download one of the supported images:
 
-   * `Ubuntu 25.04 (Plucky Puffin) Server live installer <https://cdimage.ubuntu.com/releases/25.04/release/ubuntu-25.04-live-server-riscv64.iso>`_
+   .. ubuntu-images:
+       :releases: noble
+       :image-types: live-server
+       :archs: riscv64
 
 #. Flash the pre-installed server image to a microSD card (see
    :ref:`flash-images-to-a-microsd-card`)
