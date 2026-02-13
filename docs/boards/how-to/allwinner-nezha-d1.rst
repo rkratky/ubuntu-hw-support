@@ -11,9 +11,9 @@ Using the pre-installed server image
 
 #. Download one of the supported images:
 
-   .. ubuntu-images:
+   .. ubuntu-images::
        :releases: jammy-
-       :suffix: +nezha
+       :suffixes: +nezha
 
 #. Flash the pre-installed server image to an SD card (see
    :ref:`flash-images-to-a-microsd-card`)

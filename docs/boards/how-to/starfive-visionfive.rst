@@ -11,9 +11,9 @@ This board is no longer supported beyond 22.04 (Jammy Jellyfish).
 
 #. Download one of the supported images:
 
-   .. ubuntu-images:
+   .. ubuntu-images::
        :releases: jammy
-       :suffix: +visionfive
+       :suffixes: +visionfive
 
 #. Flash the pre-installed server image to a microSD card (see
    :ref:`flash-images-to-a-microsd-card`)

@@ -17,9 +17,9 @@ Using the pre-installed server image
 
 #. Download one of the supported images:
 
-   .. ubuntu-images:
+   .. ubuntu-images::
        :releases: noble-
-       :suffix: +pic64gx
+       :suffixes: +pic64gx
 
 #. Flash the pre-installed server image to a microSD card (see
    :ref:`flash-images-to-a-microsd-card`)
