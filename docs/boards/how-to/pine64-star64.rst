@@ -120,7 +120,7 @@ Boot the live server image
 #. Download one of the supported images:
 
    .. ubuntu-images::
-       :releases: plucky
+       :releases: noble
        :image-types: live-server
        :archs: riscv64
 
