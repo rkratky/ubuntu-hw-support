@@ -1,11 +1,11 @@
 .. SPDX-License-Identifier: CC-BY-SA-4.0
 
-.. _risc-v-image-cookbook:
+.. _image-cookbook:
 
-RISC-V image cookbook
-=====================
+Image cookbook
+==============
 
-The RISC-V Image Cookbook is meant to help users to spin Ubuntu based images
+The Image Cookbook is meant to help users to spin Ubuntu based images
 for hardware that is not yet supported by the Ubuntu distribution.
 
 It will guide you through these steps of your project:
@@ -25,7 +25,7 @@ Please, start reading at the :ref:`risc-v-overview` chapter.
 Contributing
 ------------
 
-The RISC-V image cookbook is community effort and welcomes community projects,
+The Image cookbook is community effort and welcomes community projects,
 contributions, suggestions, fixes and constructive feedback.
 
 To contribute create an issue or merge request on
