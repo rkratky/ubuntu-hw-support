@@ -16,7 +16,7 @@ It will guide you through these steps of your project:
 * Build the image
 * Test the image
 
-Please, start reading at the :ref:`risc-v-overview` chapter.
+Please, start reading at the :ref:`image-overview` chapter.
 
 .. note::
 
@@ -48,35 +48,35 @@ To contribute create an issue or merge request on
 
 .. grid:: 1 1 1 1
 
-   .. grid-item-card:: :ref:`risc-v-overview`
-      :link: risc-v-overview
+   .. grid-item-card:: :ref:`image-overview`
+      :link: image-overview
       :link-type: ref
 
       **Start here** to get an overview of an image creation project
 .. grid:: 1 1 2 2
 
-   .. grid-item-card:: :ref:`risc-v-tutorials`
-      :link: risc-v-tutorials
+   .. grid-item-card:: :ref:`image-tutorials`
+      :link: image-tutorials
       :link-type: ref
 
       **First steps** - hands-on introductions
 
-   .. grid-item-card:: :ref:`risc-v-how-to-guides`
-      :link: risc-v-how-to-guides
+   .. grid-item-card:: :ref:`image-how-to-guides`
+      :link: image-how-to-guides
       :link-type: ref
 
       **Step-by-step guides** covering key operations and common tasks
 
 .. grid:: 1 1 2 2
 
-   .. grid-item-card:: :ref:`risc-v-reference`
-      :link: risc-v-reference
+   .. grid-item-card:: :ref:`image-reference`
+      :link: image-reference
       :link-type: ref
 
       **Technical information** - specifications, APIs, architecture
 
-   .. grid-item-card:: :ref:`risc-v-explanation`
-      :link: risc-v-explanation
+   .. grid-item-card:: :ref:`image-explanation`
+      :link: image-explanation
       :link-type: ref
 
       **Discussion and clarification** of key topics

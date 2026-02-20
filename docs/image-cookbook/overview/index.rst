@@ -1,6 +1,6 @@
 .. SPDX-License-Identifier: CC-BY-SA-4.0
 
-.. _risc-v-overview:
+.. _image-overview:
 
 Overview
 ========
