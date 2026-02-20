@@ -1,11 +1,11 @@
 .. SPDX-License-Identifier: CC-BY-SA-4.0
 
-.. _risc-v-overview:
+.. _image-overview:
 
 Overview
 ========
 
-The RISC-V Image Cookbook is meant to help users to spin Ubuntu based images
+The Image Cookbook is meant to help users to spin Ubuntu based images
 for hardware that is not yet supported by the Ubuntu distribution.
 
 It will guide you through these steps of your project:
