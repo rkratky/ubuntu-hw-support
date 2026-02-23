@@ -21,11 +21,29 @@ In U-Boot the following configuration settings are needed:
 * CONFIG_CMD_BOOTEFI_BOOTMGR=y
 * CONFIG_BOOTMETH_EFI_BOOTMGR=y (or deprecated CONFIG_DISTRO_DEFAULTS=y)
 
-The following configuration settings are recommended:
-
-* CONFIG_EFI_CMD_EFIDEBUG=y
 * CONFIG_CMD_NVEDIT_EFI=y
+* CONFIG_EFI_CMD_EFIDEBUG=y
 * CONFIG_HEXDUMP=y
+
+SMBIOS
+------
+
+An SMBIOS table should be present.
+
+
+EDK II
+''''''
+
+In EDK II the following driver is needed:
+
+* MdeModulePkg/Universal/SmbiosDxe/SmbiosDxe.inf
+
+U-Boot
+''''''
+
+The following configuration setting is needed:
+
+* CONFIG_GENERATE_SMBIOS_TABLE=y
 
 Network booting
 ---------------
