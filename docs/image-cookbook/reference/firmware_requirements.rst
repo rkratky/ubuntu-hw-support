@@ -9,7 +9,7 @@ UEFI support
 Ubuntu boots via UEFI. The requirements specified in the
 `Embedded Base Boot Requirements (EBBR) specification
 <https://github.com/arm-software/ebbr>`_
-should be fulfilled
+must be fulfilled.
 
 U-Boot
 ''''''
