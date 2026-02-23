@@ -12,4 +12,3 @@ find it listed within the :ref:`boards-how-to-guides` section.
 
     raspberry-pi-solo
     raspberry-pi-other
-    sifive-hifive-unmatched
