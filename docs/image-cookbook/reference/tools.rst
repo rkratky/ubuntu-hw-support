@@ -33,13 +33,13 @@ Ensure that `ubuntu-dev-tools` is installed
 
         sbuild package_*.dsc
 
-* `pull-lp-source <https://manpages.ubuntu.com/manpages/xenial/man1/pull-lp-source.1.html>`_ - Download a binary or source package from Launchpad.
+* `pull-lp-source <https://manpages.ubuntu.com/manpages/resolute/man1/pull-lp-source.1.html>`_ - Download a binary or source package from Launchpad.
 
-    * Download a package for the Plucky Puffin release:
+    * Download a package for the Resolute Raccoon release:
 
       .. code:: bash
 
-          pull-lp-source u-boot-starfive plucky
+          pull-lp-source u-boot-starfive resolute
 
 * `pull-ppa-source <https://manpages.debian.org/unstable/ubuntu-dev-tools/pull-ppa-source.1.en.html>`_ - Download a source package from a PPA.
 

@@ -15,7 +15,6 @@ Install dependencies
 
     $ sudo apt-get update
     $ sudo apt-get install git snapd qemu-user-static ubuntu-dev-tools
-    $ sudo systemctl restart systemd-binfmt
     $ sudo snap install --classic ubuntu-image
 
 Clone the gadget repository

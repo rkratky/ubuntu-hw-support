@@ -32,7 +32,7 @@ Clone the ``ukpack`` repository:
 
 .. prompt:: none $ auto
 
-    $ git clone https://kernel.ubuntu.com/forgejo/esmil/ukpack.git
+    $ git clone https://github.com/esmil/ukpack.git
 
 Create a custom kernel repository
 ---------------------------------
