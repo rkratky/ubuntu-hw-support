@@ -54,7 +54,7 @@ To consume a private PPA, access must be granted by the PPA owner. To check a pr
   * ``main`` is the component of the Ubuntu repository
 
 * Copy the lines into a file
-  :samp::`/etc/apt/sources.list.d/{team-name}-{ppa-name}>.list`
+  :samp:`/etc/apt/sources.list.d/{team-name}-{ppa-name}>.list`
 * Adjust the Ubuntu release as needed.
 * Update the sources:
 
