@@ -33,6 +33,31 @@ Check that the EFI variable file system is mounted at
 
     mount | grep efivarfs
 
+LVM and encrypted volumes support
+''''''''''''''''''''''''''''''''''
+
+Test creating and managing an encrypted LVM (Logical Volume Manager) setup.
+
+.. code-block:: text
+
+    truncate -s 1G disk
+    sgdisk --new=1::0: --typecode=1:8300 --change-name=1:'root' disk
+    sudo kpartx -a -v disk
+    # Take note of the created loop device. Assuming loop0p1 below.
+    # Replace it by the actual value.
+    sudo cryptsetup luksFormat /dev/mapper/loop0p1
+    sudo cryptsetup open /dev/mapper/loop0p1 encrypted-vg
+    sudo pvcreate /dev/mapper/encrypted-vg
+    sudo vgcreate vg_data /dev/mapper/encrypted-vg
+    sudo lvcreate -n lv_data -L 512M vg_data
+    sudo mkfs.ext4 /dev/vg_data/lv_data
+    sudo mount /dev/vg_data/lv_data /mnt
+    # Tearing down
+    sudo umount /mnt
+    sudo vgchange -a n vg_data
+    sudo kpartx -d -v disk
+    rm disk
+
 Firewall
 --------
 
