@@ -62,7 +62,7 @@ Install drivers
 ~~~~~~~~~~~~~~~
 
 This step is only required for kernel versions earlier than 6.7. It is *not*
-required for Ubuntu 24.04.
+required for Ubuntu 24.04 LTS.
 
 #. To enable Wi-Fi, the DKMS package :lp-pkg:`licheerv-rtl8723ds-dkms` is needed
    on lower kernel releases. If your LicheeRV is connected to the network via a
