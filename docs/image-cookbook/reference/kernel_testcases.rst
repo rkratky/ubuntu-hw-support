@@ -116,3 +116,13 @@ Build a snap
     cd sispmctl/
     snapcraft pack --use-lxd --verbose
     find . -name '*.snap'
+
+Task accounting
+---------------
+
+Check that task accounting is usable:
+
+.. code-block:: text
+
+    sudo apt-get install iotop
+    sudo iotop
