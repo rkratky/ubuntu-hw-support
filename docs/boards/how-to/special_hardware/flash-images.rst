@@ -25,9 +25,9 @@ Procedure
 
        sudo apt install inotify-tools atool wget
 
-#. Download the image you wish to write. Here we'll be using the Ubuntu 24.04
-   Server for Raspberry Pi image, but you should substitute your
-   ``cdimage.ubuntu.com`` URL here:
+#. Download the image you wish to write. Here we'll be using the
+   Ubuntu 24.04 LTS Server for Raspberry Pi image, but you should substitute
+   your ``cdimage.ubuntu.com`` URL here:
 
    .. code-block:: text
 

@@ -20,6 +20,44 @@ Launch a container
     sudo container prune -f
     sudo image rm ubuntu:noble
 
+File systems
+------------
+
+EFI variable file system
+''''''''''''''''''''''''
+
+Check that the EFI variable file system is mounted at
+`/sys/firmware/efi/efivars`.
+
+.. code-block:: text
+
+    mount | grep efivarfs
+
+LVM and encrypted volumes support
+''''''''''''''''''''''''''''''''''
+
+Test creating and managing an encrypted LVM (Logical Volume Manager) setup.
+
+.. code-block:: text
+
+    truncate -s 1G disk
+    sgdisk --new=1::0: --typecode=1:8300 --change-name=1:'root' disk
+    sudo kpartx -a -v disk
+    # Take note of the created loop device. Assuming loop0p1 below.
+    # Replace it by the actual value.
+    sudo cryptsetup luksFormat /dev/mapper/loop0p1
+    sudo cryptsetup open /dev/mapper/loop0p1 encrypted-vg
+    sudo pvcreate /dev/mapper/encrypted-vg
+    sudo vgcreate vg_data /dev/mapper/encrypted-vg
+    sudo lvcreate -n lv_data -L 512M vg_data
+    sudo mkfs.ext4 /dev/vg_data/lv_data
+    sudo mount /dev/vg_data/lv_data /mnt
+    # Tearing down
+    sudo umount /mnt
+    sudo vgchange -a n vg_data
+    sudo kpartx -d -v disk
+    rm disk
+
 Firewall
 --------
 
@@ -51,6 +89,19 @@ Launch a container
     sudo poweroff
     lxc delete noble1
 
+QEMU
+----
+
+Launch an EFI Shell in QEMU
+
+.. code-block:: text
+
+    sudo apt install qemu-system-riscv qemu-efi-riscv64
+    cp /usr/share/qemu-efi-riscv64/RISCV_VIRT_VARS.fd .
+    qemu-system-riscv64 -machine virt -m 4096 -nographic \
+    -drive if=pflash,format=raw,unit=0,file=/usr/share/qemu-efi-riscv64/RISCV_VIRT_CODE.fd,readonly=on \
+    -drive if=pflash,format=raw,unit=1,file=RISCV_VIRT_VARS.fd
+
 Snapcraft
 ---------
 
@@ -66,15 +117,12 @@ Build a snap
     snapcraft pack --use-lxd --verbose
     find . -name '*.snap'
 
-QEMU
-----
+Task accounting
+---------------
 
-Launch an EFI Shell in QEMU
+Check that task accounting is usable:
 
 .. code-block:: text
 
-    sudo apt install qemu-system-riscv qemu-efi-riscv64
-    cp /usr/share/qemu-efi-riscv64/RISCV_VIRT_VARS.fd .
-    qemu-system-riscv64 -machine virt -m 4096 -nographic \
-    -drive if=pflash,format=raw,unit=0,file=/usr/share/qemu-efi-riscv64/RISCV_VIRT_CODE.fd,readonly=on \
-    -drive if=pflash,format=raw,unit=1,file=RISCV_VIRT_VARS.fd
+    sudo apt-get install iotop
+    sudo iotop
